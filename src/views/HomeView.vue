@@ -1,8 +1,11 @@
 <script setup>
 import HeroComponent from "@/components/HeroComponent.vue";
+import Results from "@/components/Results.vue";
+import About from "@/components/About.vue";
 </script>
 
 <template>
   <HeroComponent />
-  <h1 class="text-red-700 text-2x">Hello</h1>
+  <Results />
+  <About />
 </template>

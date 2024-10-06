@@ -21,16 +21,20 @@ defineProps({
     type: String,
     default: "h-[56px]",
   },
-  ht: {
+  display: {
     type: String,
     default: "block",
+  },
+  padding: {
+    type: String,
+    default: "p-[10px]",
   },
 });
 </script>
 
 <template>
   <button
-    :class="`${bg} ${wd} ${ht} ${display} rounded-[16px] md:p-[10px] text-white font-[700] text-[10px] lg:text-[16px] leading-[24px] tracking-[-1.2%]`"
+    :class="`${bg} ${wd} ${ht} ${display} rounded-[16px] md:${padding} text-white font-[700] text-[10px] lg:text-[16px] leading-[24px] tracking-[-1.2%]`"
   >
     {{ title }}
   </button>
