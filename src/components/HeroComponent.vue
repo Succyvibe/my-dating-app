@@ -24,7 +24,13 @@ import heroImage from "../assets/images/heroImage.png";
         >
           We help loving hearts find each other
         </p>
-        <ButtonComponent title="I need love" bg="bg-[#FB1656]" wd="w-[261px]" />
+        <ButtonComponent
+          link="/matches"
+          type="link"
+          title="I need love"
+          bg="bg-[#FB1656]"
+          wd="w-[261px] "
+        />
       </div>
 
       <!-- ===================Hero Section============== -->

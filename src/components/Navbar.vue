@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { RouterLink } from "vue-router";
 
 import ButtonComponent from "./Button.vue";
 
@@ -20,9 +21,9 @@ const toggleMenu = () => {
       <!-- ===================NAV MENU======== -->
       <div class="md:flex md:gap-x-20">
         <!-- ====logo==== -->
-        <a href=""
+        <RouterLink to="/"
           ><img class="w-[100px] lg:w-[211.57px]" :src="logo" alt=""
-        /></a>
+        /></RouterLink>
 
         <!-- =======================NAV LINKS============ -->
         <ul
@@ -38,8 +39,14 @@ const toggleMenu = () => {
       </div>
 
       <!-- =================Button======= -->
-
-      <ButtonComponent display="none" />
+      <div>
+        <ButtonComponent
+          padding="p-5"
+          link="/matches"
+          type="link"
+          display="none"
+        />
+      </div>
       <button
         @click="toggleMenu"
         value="hamburger"
